@@ -14,7 +14,7 @@ const app = express();
 connectToDatabase()
 
 app.use(cors({
-    origin: process.env.CLIENT_URL || "https://classyshop-1jkb.vercel.app/",
+    origin: process.env.CLIENT_URL || "https://classyshop-server.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "Cache-Control", "Expires", "Pragma"],
