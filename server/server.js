@@ -25,8 +25,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/', (req, res) => {
+    console.log(process.env.CLIENT_URL, process.env.PORT, 'accessed');
     res.send('Welcome to CLASSYSHOP backend.')
-})
+});
 
 app.use('/api/v2/auth', authRoutes)
 
