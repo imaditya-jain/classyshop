@@ -18,7 +18,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: "https://classyshop-1jkb.vercel.app/",
+        target: "https://classyshop-server.vercel.app/",
         changeOrigin: true,
         secure: false
       }
