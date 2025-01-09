@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     console.log(process.env.CLIENT_URL, process.env.PORT, 'accessed');
     res.send('Welcome to CLASSYSHOP backend.')
 });
